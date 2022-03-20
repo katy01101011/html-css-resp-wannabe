@@ -5,11 +5,25 @@
   margin-top: 100px;
 }
 
+@media screen and (max-width: 419px) {
+  .row {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
 /* BLOCCO LEZIONI */
 #lezioni .row>.left,
 #lezioni .row>.right {
   width: 50%;
   float: left;
+}
+
+@media screen and (max-width: 419px) {
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 100%
+  }
 }
 
 #lezioni .row img {
@@ -31,6 +45,14 @@
   width: 33%;
 }
 
+@media screen and (max-width: 419px) {
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    width: 100%;
+  }
+}
+
 #steps {
   text-align: center;
 }
@@ -50,10 +72,23 @@
 #why .row img {
   background-color: #428bca;
   border-radius: 50%;
-  padding: 30px
+  padding: 30px;
 }
 
+@media screen and (max-width: 419px) {
+  #why .row img {
+    background-color: #428bca;
+    border-radius: 50%;
+    padding: 15px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+
 /* COMMON */
+
+
 .row::after {
   content: '';
   display: table;
@@ -64,10 +99,57 @@
   background-color: #f9f9f9;
 }
 
+@media screen and (max-width: 419px) {
+  
+  .container {
+    padding: 50px 0 50px;
+  }
+  
+  .container.grey {
+    background-color: white;
+  }
+
+  .container#lezioni,
+  .container#why {
+    background-image: url(img/clouds.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  .container#why {
+    background-image: url(img/rotate-clouds.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 1);
+  }
+}
+
 img {
   height: 200px;
 }
 
+@media screen and (max-width: 419px) {
+  img {
+    height: 100px;
+  }
+}
+
 .clear {
   clear: both;
+}
+
+@media screen and (max-width: 419px) {
+  html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 75%;
+  }
+
+  h1 {
+    font-size: 1.7em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
 }
