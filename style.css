@@ -5,7 +5,8 @@
   margin-top: 100px;
 }
 
-@media screen and (max-width: 419px) {
+/* Mobile & Tablet */
+@media screen and (max-width: 768px) {
   .row {
     width: 90%;
     margin: 0 auto;
@@ -19,7 +20,8 @@
   float: left;
 }
 
-@media screen and (max-width: 419px) {
+/* Mobile & Tablet */
+@media screen and (max-width: 768px) {
   #lezioni .row>.left,
   #lezioni .row>.right {
     width: 100%
@@ -45,6 +47,22 @@
   width: 33%;
 }
 
+/* Tablet */
+@media screen and (min-width: 419px) and (max-width: 768px) {
+  #steps .row>.left,
+  #steps .row>.central {
+    float: left;
+    width: 50%;
+  }
+
+  #steps .row>.right {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile */
 @media screen and (max-width: 419px) {
   #steps .row>.left,
   #steps .row>.central,
@@ -75,10 +93,18 @@
   padding: 30px;
 }
 
+/* Tablet */
+@media screen and (min-width: 419px) and (max-width: 768px) {
+  #why .row img {
+    padding: 30px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Mobile */
 @media screen and (max-width: 419px) {
   #why .row img {
-    background-color: #428bca;
-    border-radius: 50%;
     padding: 15px;
     width: 70px;
     height: 70px;
@@ -87,7 +113,6 @@
 
 
 /* COMMON */
-
 
 .row::after {
   content: '';
@@ -99,7 +124,8 @@
   background-color: #f9f9f9;
 }
 
-@media screen and (max-width: 419px) {
+/* Mobile & Tablet*/
+@media screen and (max-width: 768px) {
   
   .container {
     padding: 50px 0 50px;
@@ -129,6 +155,14 @@ img {
   height: 200px;
 }
 
+/* Tablet */
+@media screen and (min-width: 419px) and (max-width: 768px) {
+  img {
+    height: 150px;
+  }
+}
+
+/* Mobile */
 @media screen and (max-width: 419px) {
   img {
     height: 100px;
@@ -139,17 +173,39 @@ img {
   clear: both;
 }
 
-@media screen and (max-width: 419px) {
+/* Tablet */
+@media screen and (min-width: 419px) and (max-width: 768px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+/* Mobile & Tablet*/
+@media screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
   html {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 75%;
   }
 
   h1 {
     font-size: 1.7em;
+    margin-bottom: 1em;
   }
 
   h3 {
     font-size: 1.4em;
+    margin-bottom: .5em;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 419px) {
+  html {
+    font-size: 75%;
   }
 }
